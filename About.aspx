@@ -4,6 +4,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p class="about">
+    This site is a library for me to keep track of all the movies I own. This allows me to add or remove movies to match my current selection at any point in time. It also allows for me to easily look at my "inventory" quickly and easily.
+    </p>
+    
+    <p class="about">
 
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cm sociis natoque penatibus et magnis 
         dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis 

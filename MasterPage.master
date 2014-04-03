@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>My Movies</title>
+    <title>My Movie Library</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,14 @@
     <form id="form1" runat="server">
     <div class="container">
         <nav class="navbar navbar-default" role="navigation">
-            <asp:Image ID="Image1" CssClass="navbar-brand" Height="139px" Width="205px" runat="server" ImageUrl="~/img/moviespic.JPG" />
+            <asp:Image ID="Image1" CssClass="navbar-brand" Height="180px" Width="220px" runat="server" ImageUrl="~/img/moviespic.JPG" />
              <asp:Menu ID="Menu1" runat="server" StaticMenuItemStyle-CssClass="nav" Orientation="Horizontal" DataSourceID="SiteMapDataSource1" StaticMenuStyle-CssClass="nav navbar-nav" CssClass="collapse navbar-collapse navbar-ex1-collapse"></asp:Menu>
                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"  ShowStartingNode="false"/>
             <p class="navbar-text pull-right">
                 <asp:Label ID="lblLogin" runat="server" Text=""></asp:Label> <asp:LoginName ID="lgnName" runat="server" />
                 <asp:LoginStatus ID="LoginStatus1" runat="server" />
             </p>
+
         </nav>
 
         <div>
