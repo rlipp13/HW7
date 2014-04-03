@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
     <div class="container">
         <nav class="navbar navbar-default" role="navigation">
-            <asp:Image ID="Image1" CssClass="navbar-brand" Height="100px" Width="100px" runat="server" ImageUrl="img/vinyl-record-disc-512.png" />
+            <asp:Image ID="Image1" CssClass="navbar-brand" Height="139px" Width="205px" runat="server" ImageUrl="~/img/moviespic.JPG" />
              <asp:Menu ID="Menu1" runat="server" StaticMenuItemStyle-CssClass="nav" Orientation="Horizontal" DataSourceID="SiteMapDataSource1" StaticMenuStyle-CssClass="nav navbar-nav" CssClass="collapse navbar-collapse navbar-ex1-collapse"></asp:Menu>
                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"  ShowStartingNode="false"/>
             <p class="navbar-text pull-right">
