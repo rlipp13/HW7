@@ -1,0 +1,39 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>My Movies</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <asp:Image ID="Image1" CssClass="navbar-brand" Height="100px" Width="100px" runat="server" ImageUrl="img/vinyl-record-disc-512.png" />
+             <asp:Menu ID="Menu1" runat="server" StaticMenuItemStyle-CssClass="nav" Orientation="Horizontal" DataSourceID="SiteMapDataSource1" StaticMenuStyle-CssClass="nav navbar-nav" CssClass="collapse navbar-collapse navbar-ex1-collapse"></asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"  ShowStartingNode="false"/>
+            <p class="navbar-text pull-right">
+                <asp:Label ID="lblLogin" runat="server" Text=""></asp:Label> <asp:LoginName ID="lgnName" runat="server" />
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </p>
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer-wrapper"><center><asp:Label ID="lblToday" runat="server" Text="Label"></asp:Label> Ryan Lipp</center></div>
+    </div>
+        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>
+
